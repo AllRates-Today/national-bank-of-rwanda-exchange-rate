@@ -1,0 +1,55 @@
+{
+  "name": "national-bank-of-rwanda-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official National Bank of Rwanda (Rwanda) daily exchange rates — 21 currencies vs RWF, history since 2012. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "bnrw",
+    "national",
+    "bank",
+    "of",
+    "rwanda",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "rwf",
+    "central-bank",
+    "official-rates",
+    "rwanda",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/bnrw/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/national-bank-of-rwanda-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/national-bank-of-rwanda-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
