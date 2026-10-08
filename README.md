@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'RWF', { apiKey: 'art_live_...' });
 {
   bank: 'bnrw',
   name: 'National Bank of Rwanda',
-  rate_date: '2026-10-06',   // National Bank of Rwanda's own publication date
+  rate_date: '2026-10-08',   // National Bank of Rwanda's own publication date
   source: 'USD',
   target: 'RWF',
-  rate: 1474.21,
+  rate: 1474.395,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,11 +113,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bnrw',
   name: 'National Bank of Rwanda',
-  rate_date: '2026-10-06',
+  rate_date: '2026-10-08',
   rates: [
-    { "base": "USD", "quote": "RWF", "type": "reference", "value": 1474.21 },
-    { "base": "USD", "quote": "RWF", "type": "sell", "value": 1479.21 },
-    { "base": "USD", "quote": "RWF", "type": "buy", "value": 1469.21 },
+    { "base": "USD", "quote": "RWF", "type": "reference", "value": 1474.395 },
+    { "base": "USD", "quote": "RWF", "type": "sell", "value": 1479.395 },
+    { "base": "USD", "quote": "RWF", "type": "buy", "value": 1469.395 },
     // … the rest of the published table (21 currencies vs RWF)
   ],
   disclaimer: '…'
@@ -157,7 +157,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'national-bank-of-rwanda-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'RWF', from: '2026-01-01', to: '2026-10-06' },
+  { source: 'USD', target: 'RWF', from: '2026-01-01', to: '2026-10-08' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -170,11 +170,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'RWF',
   from: '2026-01-01',
-  to: '2026-10-06',
+  to: '2026-10-08',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-06', rate: 1474.21, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-08', rate: 1474.395, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -223,6 +223,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bnrw/latest?format=xml&api_k
 
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bnrw')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
+- Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bnrw ...` command
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
