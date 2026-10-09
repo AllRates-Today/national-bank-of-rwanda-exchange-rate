@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/national-bank-of-rwanda-exchange-rate.svg)](https://github.com/AllRates-Today/national-bank-of-rwanda-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/national-bank-of-rwanda-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/RWF today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbnrw%3Fsource%3DUSD%26target%3DRWF&query=%24.rate&label=USD%2FRWF%20published%20by%20National%20Bank%20of%20Rwanda&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bnrw/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbnrw%3Fsource%3DUSD%26target%3DRWF&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bnrw/)
 
 **Official National Bank of Rwanda (Rwanda) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers National Bank of Rwanda itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full National Bank of Rwanda table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by National Bank of Rwanda — 60 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | RWF | buy | 400.095576 |
+| AED | RWF | reference | 401.456843 |
+| AED | RWF | sell | 402.818111 |
+| AUD | RWF | buy | 1026.347688 |
+| AUD | RWF | reference | 1029.839688 |
+| AUD | RWF | sell | 1033.331688 |
+| BIF | RWF | buy | 0.490836 |
+| BIF | RWF | reference | 0.492506 |
+| BIF | RWF | sell | 0.494176 |
+| CAD | RWF | buy | 1034.180496 |
+| CAD | RWF | reference | 1037.699146 |
+| CAD | RWF | sell | 1041.217796 |
+| CHF | RWF | buy | 1770.246226 |
+| CHF | RWF | reference | 1776.269234 |
+| CHF | RWF | sell | 1782.292241 |
+| CNY | RWF | buy | 219.448684 |
+| CNY | RWF | reference | 220.195326 |
+| CNY | RWF | sell | 220.941969 |
+| DKK | RWF | buy | 220.871962 |
+| DKK | RWF | reference | 221.623447 |
+| DKK | RWF | sell | 222.374932 |
+| ETB | RWF | buy | 9.100312 |
+| ETB | RWF | reference | 9.131275 |
+| ETB | RWF | sell | 9.162237 |
+| EUR | RWF | buy | 1650.914938 |
+| EUR | RWF | reference | 1656.531938 |
+| EUR | RWF | sell | 1662.148938 |
+| GBP | RWF | buy | 1946.592422 |
+| GBP | RWF | reference | 1953.215422 |
+| GBP | RWF | sell | 1959.838422 |
+| INR | RWF | buy | 15.216663 |
+| INR | RWF | reference | 15.268435 |
+| INR | RWF | sell | 15.320208 |
+| JPY | RWF | buy | 9.297235 |
+| JPY | RWF | reference | 9.328867 |
+| JPY | RWF | sell | 9.3605 |
+| KES | RWF | buy | 11.317159 |
+| KES | RWF | reference | 11.355664 |
+| KES | RWF | sell | 11.394169 |
+| NOK | RWF | buy | 153.950684 |
+| NOK | RWF | reference | 154.474479 |
+| NOK | RWF | sell | 154.998274 |
+| SAR | RWF | buy | 391.442013 |
+| SAR | RWF | reference | 392.773838 |
+| SAR | RWF | sell | 394.105663 |
+| SEK | RWF | buy | 147.685172 |
+| SEK | RWF | reference | 148.187649 |
+| SEK | RWF | sell | 148.690127 |
+| TZS | RWF | buy | 0.555497 |
+| TZS | RWF | reference | 0.557387 |
+| TZS | RWF | sell | 0.559277 |
+| UGX | RWF | buy | 0.35931 |
+| UGX | RWF | reference | 0.360532 |
+| UGX | RWF | sell | 0.361755 |
+| USD | RWF | buy | 1469.57 |
+| USD | RWF | reference | 1474.57 |
+| USD | RWF | sell | 1479.57 |
+| ZAR | RWF | buy | 88.979524 |
+| ZAR | RWF | reference | 89.282264 |
+| ZAR | RWF | sell | 89.585004 |
+
+Source: [Official rates published by BNRW, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnrw/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
