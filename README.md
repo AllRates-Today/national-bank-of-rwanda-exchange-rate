@@ -24,93 +24,78 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest National Bank of Rwanda table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/bnrw?source=USD&target=RWF"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/bnrw').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest National Bank of Rwanda table](https://allratestoday.com/api/open/central-bank/bnrw/table.svg)](https://allratestoday.com/central-bank-rates-api/bnrw/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by National Bank of Rwanda — 60 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by National Bank of Rwanda — 60 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | RWF | buy | 400.540415 |
-| AED | RWF | reference | 401.9017 |
-| AED | RWF | sell | 403.262985 |
-| AUD | RWF | buy | 1037.553221 |
-| AUD | RWF | reference | 1041.079471 |
-| AUD | RWF | sell | 1044.605721 |
-| BIF | RWF | buy | 0.49064 |
-| BIF | RWF | reference | 0.492308 |
-| BIF | RWF | sell | 0.493975 |
-| CAD | RWF | buy | 1051.709699 |
-| CAD | RWF | reference | 1055.284061 |
-| CAD | RWF | sell | 1058.858424 |
-| CHF | RWF | buy | 1774.43595 |
-| CHF | RWF | reference | 1780.466585 |
-| CHF | RWF | sell | 1786.49722 |
-| CNY | RWF | buy | 220.846936 |
-| CNY | RWF | reference | 221.597511 |
-| CNY | RWF | sell | 222.348086 |
-| DKK | RWF | buy | 219.294836 |
-| DKK | RWF | reference | 220.040136 |
-| DKK | RWF | sell | 220.785436 |
-| ETB | RWF | buy | 9.109578 |
-| ETB | RWF | reference | 9.140538 |
-| ETB | RWF | sell | 9.171498 |
-| EUR | RWF | buy | 1638.90009 |
-| EUR | RWF | reference | 1644.47009 |
-| EUR | RWF | sell | 1650.04009 |
-| GBP | RWF | buy | 1959.103505 |
-| GBP | RWF | reference | 1965.761755 |
-| GBP | RWF | sell | 1972.420005 |
-| INR | RWF | buy | 15.439351 |
-| INR | RWF | reference | 15.491823 |
-| INR | RWF | sell | 15.544296 |
-| JPY | RWF | buy | 9.318486 |
-| JPY | RWF | reference | 9.350156 |
-| JPY | RWF | sell | 9.381826 |
-| KES | RWF | buy | 11.316355 |
-| KES | RWF | reference | 11.354815 |
-| KES | RWF | sell | 11.393275 |
-| NOK | RWF | buy | 158.860027 |
-| NOK | RWF | reference | 159.399932 |
-| NOK | RWF | sell | 159.939837 |
-| SAR | RWF | buy | 392.039172 |
-| SAR | RWF | reference | 393.371565 |
-| SAR | RWF | sell | 394.703957 |
-| SEK | RWF | buy | 148.377099 |
-| SEK | RWF | reference | 148.881376 |
-| SEK | RWF | sell | 149.385654 |
-| TZS | RWF | buy | 0.554637 |
-| TZS | RWF | reference | 0.556522 |
-| TZS | RWF | sell | 0.558407 |
-| UGX | RWF | buy | 0.337637 |
-| UGX | RWF | reference | 0.338784 |
-| UGX | RWF | sell | 0.339932 |
-| USD | RWF | buy | 1471.185 |
-| USD | RWF | reference | 1476.185 |
-| USD | RWF | sell | 1481.185 |
-| ZAR | RWF | buy | 88.51973 |
-| ZAR | RWF | reference | 88.820575 |
-| ZAR | RWF | sell | 89.12142 |
+| AED | RWF | buy | 400.580323 |
+| AED | RWF | reference | 401.941721 |
+| AED | RWF | sell | 403.303118 |
+| AUD | RWF | buy | 1035.216916 |
+| AUD | RWF | reference | 1038.735167 |
+| AUD | RWF | sell | 1042.253417 |
+| BIF | RWF | buy | 0.490649 |
+| BIF | RWF | reference | 0.492316 |
+| BIF | RWF | sell | 0.493984 |
+| CAD | RWF | buy | 1052.781693 |
+| CAD | RWF | reference | 1056.359638 |
+| CAD | RWF | sell | 1059.937583 |
+| CHF | RWF | buy | 1788.161598 |
+| CHF | RWF | reference | 1794.238778 |
+| CHF | RWF | sell | 1800.315958 |
+| CNY | RWF | buy | 220.947053 |
+| CNY | RWF | reference | 221.697956 |
+| CNY | RWF | sell | 222.448858 |
+| DKK | RWF | buy | 220.135681 |
+| DKK | RWF | reference | 220.883826 |
+| DKK | RWF | sell | 221.631971 |
+| ETB | RWF | buy | 9.109732 |
+| ETB | RWF | reference | 9.140692 |
+| ETB | RWF | sell | 9.171652 |
+| EUR | RWF | buy | 1647.7552 |
+| EUR | RWF | reference | 1653.3552 |
+| EUR | RWF | sell | 1658.9552 |
+| GBP | RWF | buy | 1971.4214 |
+| GBP | RWF | reference | 1978.1214 |
+| GBP | RWF | sell | 1984.8214 |
+| INR | RWF | buy | 15.443291 |
+| INR | RWF | reference | 15.495776 |
+| INR | RWF | sell | 15.548261 |
+| JPY | RWF | buy | 9.330414 |
+| JPY | RWF | reference | 9.362124 |
+| JPY | RWF | sell | 9.393834 |
+| KES | RWF | buy | 11.316547 |
+| KES | RWF | reference | 11.355007 |
+| KES | RWF | sell | 11.393467 |
+| NOK | RWF | buy | 159.396041 |
+| NOK | RWF | reference | 159.937758 |
+| NOK | RWF | sell | 160.479476 |
+| SAR | RWF | buy | 392.030386 |
+| SAR | RWF | reference | 393.362726 |
+| SAR | RWF | sell | 394.695066 |
+| SEK | RWF | buy | 149.664722 |
+| SEK | RWF | reference | 150.173367 |
+| SEK | RWF | sell | 150.682012 |
+| TZS | RWF | buy | 0.556117 |
+| TZS | RWF | reference | 0.558007 |
+| TZS | RWF | sell | 0.559897 |
+| UGX | RWF | buy | 0.338378 |
+| UGX | RWF | reference | 0.339528 |
+| UGX | RWF | sell | 0.340678 |
+| USD | RWF | buy | 1471.21 |
+| USD | RWF | reference | 1476.21 |
+| USD | RWF | sell | 1481.21 |
+| ZAR | RWF | buy | 88.530797 |
+| ZAR | RWF | reference | 88.831675 |
+| ZAR | RWF | sell | 89.132552 |
 
 </details>
 
