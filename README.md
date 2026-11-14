@@ -32,7 +32,7 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-13 by National Bank of Rwanda — 57 rates. Updated 2026-11-13.</summary>
+<summary>Table as text: published 2026-11-13 by National Bank of Rwanda — 60 rates. Updated 2026-11-14.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -69,6 +69,9 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 | INR | RWF | buy | 15.626879 |
 | INR | RWF | reference | 15.679952 |
 | INR | RWF | sell | 15.733024 |
+| JPY | RWF | buy | 9.202847 |
+| JPY | RWF | reference | 9.234102 |
+| JPY | RWF | sell | 9.265357 |
 | KES | RWF | buy | 11.324316 |
 | KES | RWF | reference | 11.362776 |
 | KES | RWF | sell | 11.401236 |
